@@ -1,1 +1,28 @@
-/* styles for Header */
+.header {
+  background-color: var(--background-header);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 24px 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 32px;
+}
+
+.navigationLink {
+  display: block;
+  padding: 24px 0;
+}
+
+.navigationLink:hover,
+.navigationLink:focus {
+  color: var(--accent-dark);
+}
