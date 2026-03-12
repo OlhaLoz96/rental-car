@@ -64,3 +64,17 @@ img {
   font-size: 20px;
   line-height: 1.2;
 }
+
+.button {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: var(--accent);
+  font-weight: 600;
+  color: var(--text-white);
+  transition: background-color 300ms linear;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-dark);
+}
