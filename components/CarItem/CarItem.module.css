@@ -1,0 +1,78 @@
+.item {
+  width: calc((100% - 96px) / 4);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.buttonLike {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.heart {
+  fill: var(--background-header);
+  transition: fill 300ms linear;
+}
+
+.buttonLike:hover .heart {
+  fill: var(--accent);
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  height: 268px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(18, 20, 23, 0.5) 0%, rgba(18, 20, 23, 0.5) 100%);
+}
+
+.info {
+  padding: 16px 0 28px;
+  margin-bottom: auto;
+}
+
+.titlePrice {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.model {
+  color: var(--accent);
+}
+
+.characteristicsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--text-light);
+}
+
+.characteristic:not(:last-child) {
+  padding-right: 6px;
+  border-right: 1px solid var(--scroll);
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  padding: 12px 97px;
+}
